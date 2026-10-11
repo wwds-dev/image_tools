@@ -3,8 +3,8 @@ import re
 from pathlib import Path
 
 # ---------------- CONFIG ----------------
-SOURCE_DIR = Path("/Users/as/Documents/Business/Merch/altmerch.store/Sweet Poison")
-TARGET_DIR = Path("/Users/as/Documents/Business/Merch/altmerch.store/Sweet Poison/ready_for_print")
+SOURCE_DIR = Path("/Users/as/Documents/Websites/altmerch.store/Sweet Poison")
+TARGET_DIR = Path("/Users/as/Documents/Websites/altmerch.store/Sweet Poison/ready_for_print")
 
 BASE_NAME = "sweet_poison"   # change if needed
 IMAGE_EXTENSIONS = {".jpg", ".jpeg", ".png", ".webp", ".tiff"}
