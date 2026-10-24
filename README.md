@@ -13,4 +13,4 @@ Small image-prep utilities (consolidated from former top-level `change_dpi`, `re
 - **move_small_images.py** — moves images ≤200×200 px into a `Delete` subfolder (cleanup of thumbnails/junk). Edit `source_folder`. Shows a macOS notification when done.
 - **move_small_images.workflow** — Automator Quick Action wrapper for the same task.
 
-> Note: input/output paths are hardcoded at the top of each script — edit them per use. They point at external `~/Documents/Business/...` and `~/Downloads/...` folders, not lab-relative paths.
+> Note: input/output paths are hardcoded at the top of each script — edit them per use. Since 2026-10-11 the `dpi/` and `rename/` scripts point at `~/Documents/Websites/altmerch.store/...` (RAW, Sweet Poison, changed_DPI, ready_for_print); `move/` points at `~/Downloads/Pictures/...`. None are lab-relative paths. The store folder itself currently lives at `~/Documents/Business/Merch/altmerch.store`, so check the path exists before a run.

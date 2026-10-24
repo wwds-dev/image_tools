@@ -9,6 +9,7 @@
 ## v1 — current
 
 - [ ] `P1` `bug` `@ai` **Every path is hardcoded at the top of every script.** `input_folder`, `output_folder`, `SOURCE_DIR`, `TARGET_DIR`, `BASE_NAME`, `source_folder` — all edited by hand before each run, and all pointing at external `~/Documents/Business/…` and `~/Downloads/…` folders. Replace with `argparse`.
+- [ ] `P1` `bug` `@me` The 2026-10-11 path change points `dpi/` and `rename/` at `~/Documents/Websites/altmerch.store/`, but the store folder is at `~/Documents/Business/Merch/altmerch.store`. Confirm which is right, then fix the paths (or do the argparse item above).
 - [ ] `P1` `bug` `@ai` `move_small_images.py` moves files into a `Delete` subfolder with no dry-run and no undo. Add `--dry-run` before it eats something.
 - [ ] `P2` `bug` `@ai` `rename_for_print.py` continues from the highest existing index in the target folder — no test covers what happens with gaps, non-matching filenames, or a collision
 - [ ] `P2` `testing` `@ai` No tests anywhere in the project. Start with the rename indexer, which is the one with real logic.
