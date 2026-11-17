@@ -2,8 +2,8 @@ import os
 from PIL import Image
 
 # === CONFIG ===
-input_folder = os.path.expanduser("~/Documents/Websites/altmerch.store/Sweet Poison")
-output_folder = os.path.join(input_folder, "~/Documents/Websites/altmerch.store/Sweet Poison/output_ready_for_print")
+input_folder = os.path.expanduser("~/Documents/lab/websites/altmerch.store/Sweet Poison")
+output_folder = os.path.join(input_folder, "~/Documents/lab/websites/altmerch.store/Sweet Poison/output_ready_for_print")
 
 # Print specs
 target_dpi = (300, 300)

@@ -9,8 +9,8 @@
 ## v1 — current
 
 - [ ] `P1` `bug` `@ai` **Every path is hardcoded at the top of every script.** `input_folder`, `output_folder`, `SOURCE_DIR`, `TARGET_DIR`, `BASE_NAME`, `source_folder` — all edited by hand before each run, and all pointing at external `~/Documents/Business/…` and `~/Downloads/…` folders. Replace with `argparse`.
-- [ ] `P1` `bug` `@me` The 2026-10-11 path change points `dpi/` and `rename/` at `~/Documents/Websites/altmerch.store/`, but the store folder is at `~/Documents/Business/Merch/altmerch.store`. Confirm which is right, then fix the paths (or do the argparse item above).
-- [ ] `P1` `bug` `@ai` `dpi_fit_canvas.py` builds `output_folder` as `os.path.join(input_folder, "~/Documents/Websites/…/output_ready_for_print")`; the `~` is never expanded, so output lands in a literal `Sweet Poison/~/Documents/Websites/altmerch.store/Sweet Poison/output_ready_for_print` folder inside the input folder.
+- [x] `P1` `bug` `@me` `dpi/` and `rename/` pointed at a different altmerch.store folder than the real one. Resolved 2026-11-17: the store moved to `~/Documents/lab/websites/altmerch.store` and the scripts point there.
+- [ ] `P1` `bug` `@ai` `dpi_fit_canvas.py` builds `output_folder` as `os.path.join(input_folder, "~/Documents/lab/websites/…/output_ready_for_print")`; the `~` is never expanded, so output lands in a literal `Sweet Poison/~/Documents/lab/websites/altmerch.store/Sweet Poison/output_ready_for_print` folder inside the input folder.
 - [ ] `P1` `bug` `@ai` `dpi_fit_canvas.py` accepts `.jpg`/`.jpeg` but saves the RGBA canvas under the original name; Pillow refuses RGBA as JPEG (`OSError`), and with no try/except the whole run stops at the first JPEG.
 - [ ] `P2` `bug` `@ai` `move_small_images.workflow` runs `~/Documents/Tech/scripts/move_images.py`, not `move/move_small_images.py` from this repo. Point it at the repo copy.
 - [ ] `P1` `bug` `@ai` `move_small_images.py` moves files into a `Delete` subfolder with no dry-run and no undo. Add `--dry-run` before it eats something.

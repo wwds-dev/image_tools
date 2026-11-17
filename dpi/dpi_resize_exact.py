@@ -2,9 +2,9 @@ import os
 from PIL import Image
 
 # === CONFIG ===
-input_folder = os.path.expanduser("~/Documents/Websites/altmerch.store/RAW")
+input_folder = os.path.expanduser("~/Documents/lab/websites/altmerch.store/RAW")
 # Specified your absolute output path directly
-output_folder = "/Users/as/Documents/Websites/altmerch.store/changed_DPI"
+output_folder = "/Users/as/Documents/lab/websites/altmerch.store/changed_DPI"
 target_dpi = (300, 300)
 
 # Set your final print size in inches
